@@ -8,7 +8,7 @@ package lilliput
 // #cgo linux CXXFLAGS: -I${SRCDIR}/deps/linux/include
 // #cgo LDFLAGS: -lswscale -lavformat -lavcodec -lavfilter -lavutil -lbz2 -lz
 // #cgo darwin LDFLAGS: -L${SRCDIR}/deps/osx/lib
-// #cgo linux LDFLAGS: -L${SRCDIR}/deps/linux/lib
+// #cgo linux LDFLAGS: -L${SRCDIR}/deps/linux/lib -no-pie
 // #include "avcodec.hpp"
 import "C"
 
